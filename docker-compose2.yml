@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web:
+    container_name: my_web
+    environment:
+      - NODE_ENV=prod
+    image: my_nginx
+    ports:
+      - "80:80"
